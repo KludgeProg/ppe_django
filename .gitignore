@@ -1,4 +1,4 @@
 # User-specific stuff:
 .idea
 .idea/
-# ppe_django/static/common/images
+ppe_django/static/common/images/**
