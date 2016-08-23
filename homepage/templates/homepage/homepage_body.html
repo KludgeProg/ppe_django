@@ -1,0 +1,317 @@
+{% extends "homepage/base.html" %}
+
+{% load static %}
+
+{% block body %}
+	<!-- Header -->
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<img class="img-responsive" src="{% static 'common/images/homepage/ppeLogo1.png' %}" alt="Logo caracterizado por las siglas PPExpress">
+					<div class="intro-text">
+						<br>
+						<span class="name">Puerto Plata Express</span>
+						<hr class="star-light">
+						<span class="skills">Representantes Autorizados de UPS, FedEx y DHL en Puerto Plata, R. D.</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Portfolio Grid Section -->
+	<section id="portfolio">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2>Servicios</h2>
+					<hr class="star-primary">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 portfolio-item">
+					<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+						<div class="caption">
+							<div class="caption-content">
+								<i class="fa fa-search-plus fa-3x"></i>
+							</div>
+						</div>
+						<img src="{% static 'common/images/homepage/envio1.png' %}" class="img-responsive img-centered" alt="Envios Nacionales e Internacionales">
+					</a>
+				</div>
+				<div class="col-sm-4 portfolio-item">
+					<a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+						<div class="caption">
+							<div class="caption-content">
+								<i class="fa fa-search-plus fa-3x"></i>
+							</div>
+						</div>
+						<img src="{% static 'common/images/homepage/pasaporte1.png' %}" class="img-responsive img-centered" alt="Llenado Formularios de Visa">
+					</a>
+				</div>
+				<div class="col-sm-4 portfolio-item">
+					<a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+						<div class="caption">
+							<div class="caption-content">
+								<i class="fa fa-search-plus fa-3x"></i>
+							</div>
+						</div>
+						<img src="{% static 'common/images/homepage/copias1.png' %}" class="img-responsive img-centered" alt="Fotocopias a Escala de Grises y Color">
+					</a>
+				</div>
+				<div class="col-sm-6 portfolio-item">
+					<a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+						<div class="caption">
+							<div class="caption-content">
+								<i class="fa fa-search-plus fa-3x"></i>
+							</div>
+						</div>
+						<img src="{% static 'common/images/homepage/fax1.png' %}" class="img-responsive img-centered" alt="Fax y Scaner de Fotos">
+					</a>
+				</div>
+				<div class="col-sm-6 portfolio-item">
+					<a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+						<div class="caption">
+							<div class="caption-content">
+								<i class="fa fa-search-plus fa-3x"></i>
+							</div>
+						</div>
+						<img src="{% static 'common/images/homepage/compras1.png' %}" class="img-responsive img-centered" alt="Compras por Internet">
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- About Section -->
+	<section class="success" id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2>Nosotros:</h2>
+					<hr class="star-light">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-lg-offset-2">
+					<h3 id="nosotrosh3" class="nosotrosh3">¿Quiénes Somos?</h3>
+					<p>Somos una compañía de transporte de documentos y paquetes a nivel mundial como representantes autorizados de UPS, FedEx y DHL.</p>
+					<p>Somos pioneros en el área de envíos en la ciudad de Puerto Plata. Sin importar lugar o ubicación, garantizamos la entrega rápida y eficaz de sus documentos o mercancías en cualquier parte del mundo.</p>
+				</div>
+				<br>
+				<div class="col-lg-4">
+					<h3 id="nosotrosh3" class="nosotrosh3">Misión:</h3>
+					<p>Proveer a nuestros clientes la más amplia gama de servicios de transporte de documentos y paquetes tanto nacional como internacional con la más alta calidad.</p>
+					<br>
+					<h3 id="nosotrosh3" class="nosotrosh3">Visión:</h3>
+					<p>Ser una empresa de transporte de mercancía internacional y nacional, donde los clientes encuentren la solución perfecta para sus requerimientos de envíos y satisfacer todas sus necesidades desde el tipo de empaque y/o embalaje, hasta compras por Internet y mucho más, completando con un personal capacitado ofreciendo un servicio de primera.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+	<div class="scroll-top page-scroll visible-xs visble-sm">
+		<a class="btn btn-primary" href="#page-top">
+			<i class="fa fa-chevron-up"></i>
+		</a>
+	</div>
+
+	<!-- Portfolio Modals -->
+	<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-content">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl">
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
+						<div class="modal-body">
+							<h2>Envíos Nacionales e Internacionales</h2>
+							<hr class="star-primary">
+							<img src="{% static 'common/images/homepage/envio1.png' %}" class="img-responsive img-centered" alt="Envios Nacionales e Internacionales">
+							<p>Envíos Nacionales e Internacionales a todas partes del mundo y el país vía UPS, FedEx y DHL. Contamos con el mejor servicio Expreso, seguro y confiable.</p>
+							<ul class="list-inline item-details">
+								<li>Teléfono:
+									<strong><a href="https://www.facebook.com/pages/Puerto-Plata-Express/171517712916791">(809) 586-8264</a>
+									</strong>
+								</li>
+								<li>Fax:
+									<strong><a href="https://www.facebook.com/pages/Puerto-Plata-Express/171517712916791">(809) 586-6265</a>
+									</strong>
+								</li>
+								<li>Correo Electrónico:
+									<strong><a href="https://www.facebook.com/pages/Puerto-Plata-Express/171517712916791">ppe138@hotmail.com</a>
+									</strong>
+								</li>
+							</ul>
+							<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-content">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl">
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
+						<div class="modal-body">
+							<h2>Servicios Consulares</h2>
+							<hr class="star-primary">
+							<img src="{% static 'common/images/homepage/pasaporte1.png' %}" class="img-responsive img-centered" alt="Llenado Formularios de Visa">
+							<p>Gestión del proceso de visado desde República Dominicana hacia Estados Unidos ya sea para visa de Noviazgo, Matrimonio, Viaje, Trabajo, Residencia, entre otros. Además, llenamos todo tipo de formularios para Visa de Inmigrantes y No Inmigrantes tales como:
+								<li>DS-160</li>
+								<li>DS-260</li>
+							</p>
+							<ul class="list-inline item-details">
+								<li>Teléfono:
+									<strong><a href="https://www.facebook.com/pages/Puerto-Plata-Express/171517712916791">(809) 586-8264</a>
+									</strong>
+								</li>
+								<li>Fax:
+									<strong><a href="https://www.facebook.com/pages/Puerto-Plata-Express/171517712916791">(809) 586-6265</a>
+									</strong>
+								</li>
+								<li>Correo Electrónico:
+									<strong><a href="https://www.facebook.com/pages/Puerto-Plata-Express/171517712916791">ppe138@hotmail.com</a>
+									</strong>
+								</li>
+							</ul>
+							<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-content">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl">
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
+						<div class="modal-body">
+							<h2>Copias</h2>
+							<hr class="star-primary">
+							<img src="{% static 'common/images/homepage/copias1.png' %}" class="img-responsive img-centered" alt="Fotocopias a Escala de Grises y Color">
+							<p>Sacado de Copias a escala de Grises y Color, así como venta de Sobres, Folders, Papelería, Impresiones a escala de Grises y Color, y mucho mas...</p>
+							<ul class="list-inline item-details">
+								<li>Teléfono:
+									<strong><a href="https://www.facebook.com/pages/Puerto-Plata-Express/171517712916791">(809) 586-8264</a>
+									</strong>
+								</li>
+								<li>Fax:
+									<strong><a href="https://www.facebook.com/pages/Puerto-Plata-Express/171517712916791">(809) 586-6265</a>
+									</strong>
+								</li>
+								<li>Correo Electrónico:
+									<strong><a href="https://www.facebook.com/pages/Puerto-Plata-Express/171517712916791">ppe138@hotmail.com</a>
+									</strong>
+								</li>
+							</ul>
+							<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-content">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl">
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
+						<div class="modal-body">
+							<h2>Fax / Scáner</h2>
+							<hr class="star-primary">
+							<img src="{% static 'common/images/homepage/fax1.png' %}" class="img-responsive img-centered" alt="Fax y Scaner de Fotos">
+							<p>Recepción y envío de Fax a nivel Nacional e Internacional así como digitalización de documentos para facilidad de manipulación.</p>
+							<ul class="list-inline item-details">
+								<li>Teléfono:
+									<strong><a href="https://www.facebook.com/pages/Puerto-Plata-Express/171517712916791">(809) 586-8264</a>
+									</strong>
+								</li>
+								<li>Fax:
+									<strong><a href="https://www.facebook.com/pages/Puerto-Plata-Express/171517712916791">(809) 586-6265</a>
+									</strong>
+								</li>
+								<li>Correo Electrónico:
+									<strong><a href="https://www.facebook.com/pages/Puerto-Plata-Express/171517712916791">ppe138@hotmail.com</a>
+									</strong>
+								</li>
+							</ul>
+							<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-content">
+			<div class="close-modal" data-dismiss="modal">
+				<div class="lr">
+					<div class="rl">
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
+						<div class="modal-body">
+							<h2>Compras por Internet</h2>
+							<hr class="star-primary">
+							<img src="{% static 'common/images/homepage/compras1.png' %}" class="img-responsive img-centered" alt="Compras por Internet">
+							<p>Compra de Artículos por Internet (eBay, Amazon, iTunes, Alienware...)</p>
+							<ul class="list-inline item-details">
+								<li>Teléfono:
+									<strong><a href="https://www.facebook.com/pages/Puerto-Plata-Express/171517712916791">(809) 586-8264</a>
+									</strong>
+								</li>
+								<li>Fax:
+									<strong><a href="https://www.facebook.com/pages/Puerto-Plata-Express/171517712916791">(809) 586-6265</a>
+									</strong>
+								</li>
+								<li>Correo Electrónico:
+									<strong><a href="https://www.facebook.com/pages/Puerto-Plata-Express/171517712916791">ppe138@hotmail.com</a>
+									</strong>
+								</li>
+							</ul>
+							<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}
+
+{% block custom_js %}
+	<script async src="{% static 'homepage/js/homepage.js' %}"></script>
+{% endblock %}
