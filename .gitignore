@@ -2,7 +2,7 @@
 .idea/
 .vscode/
 
-env/
+venv/
 *.pyc
 
 *.png
@@ -19,7 +19,7 @@ __pycache__/
 
 # Distribution / packaging
 .Python
-env/
+venv/
 build/
 develop-eggs/
 dist/
