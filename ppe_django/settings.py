@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
 	'homepage.apps.HomepageConfig',
 	'login.apps.LoginConfig',
+	'venta.apps.VentaConfig',
 	'django.contrib.admin',
 	'django.contrib.auth',
 	'django.contrib.contenttypes',
@@ -106,9 +107,10 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-LOGIN_URL = reverse_lazy('login')
-LOGIN_REDIRECT_URL = reverse_lazy('welcome')
-LOGOUT_URL = reverse_lazy('/')
+LOGIN_URL = reverse_lazy('control_login')
+LOGIN_REDIRECT_URL = reverse_lazy('control_welcome')
+LOGOUT_URL = reverse_lazy('index')
+LOGOUT_REDIRECT_URL = reverse_lazy('index')
 
 
 # Internationalization

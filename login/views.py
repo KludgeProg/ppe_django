@@ -1,9 +1,7 @@
-from django.http import HttpResponse
 from django.shortcuts import redirect, render
-from django.contrib.auth import authenticate, login
-from django.contrib.auth.decorators import login_required
+from django.contrib.auth import authenticate, login, logout
 
-from .forms import LoginForm
+from forms import LoginForm
 # Create your views here.
 
 
@@ -34,3 +32,8 @@ def user_login(request):
 		'error': error,
 	}
 	return render(request, 'login/login.html', ctx)
+
+
+def user_logout(request, next_page='tesla', template_name='tesla', redirect_field_name='index'):
+	logout(request)
+	return redirect('index')

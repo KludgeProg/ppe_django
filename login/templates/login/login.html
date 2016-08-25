@@ -1,4 +1,4 @@
-{% extends "common/login_header.html" %}
+{% extends "common/control_header.html" %}
 {% load static %}
 
 {% block title %}{{ current_site }}{% endblock %}
@@ -17,7 +17,7 @@
           {% if next %}
             <input type="hidden" name="next" value="{{ next }}" />
           {% endif %}
-          <form method="post" action="/control/login" role="login">
+          <form method="post" action="{% url 'control_login' %}" role="login">
             {% csrf_token %}
             <img src="{% static 'common/images/homepage/ppeLogo1.png' %}" class="img-responsive" alt="" />
             {{ form.username }}
