@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/1.10/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.10/ref/settings/
 """
+from django.core.urlresolvers import reverse_lazy
 
 import os
 
@@ -31,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
 	'homepage.apps.HomepageConfig',
+	'login.apps.LoginConfig',
 	'django.contrib.admin',
 	'django.contrib.auth',
 	'django.contrib.contenttypes',
@@ -103,6 +105,10 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+LOGIN_URL = reverse_lazy('login')
+LOGIN_REDIRECT_URL = reverse_lazy('welcome')
+LOGOUT_URL = reverse_lazy('/')
 
 
 # Internationalization

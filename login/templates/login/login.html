@@ -1,0 +1,36 @@
+{% extends "common/login_header.html" %}
+{% load static %}
+
+{% block title %}{{ current_site }}{% endblock %}
+
+{% block custom_css %}
+	<link href="{% static 'login/css/login.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <div class="row" id="pwd-container">
+      <div class="col-md-4"></div>
+
+      <div class="col-md-4">
+        <section class="login-form">
+          {% if next %}
+            <input type="hidden" name="next" value="{{ next }}" />
+          {% endif %}
+          <form method="post" action="/control/login" role="login">
+            {% csrf_token %}
+            <img src="{% static 'common/images/homepage/ppeLogo1.png' %}" class="img-responsive" alt="" />
+            {{ form.username }}
+            {{ form.password }}
+            <button type="submit" name="go" class="btn btn-lg btn-primary btn-block">Sign in</button>
+            {% if error %}
+              <span class="error">{{ error }}</span>
+            {% endif %}
+          </form>
+        </section>
+        </div>
+
+        <div class="col-md-4"></div>
+    </div>
+  </div>
+{% endblock %}
