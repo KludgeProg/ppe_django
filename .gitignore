@@ -3,8 +3,8 @@
 .vscode/
 
 venv/
+venv
 *.pyc
-
 *.png
 *.log
 *.jpg
