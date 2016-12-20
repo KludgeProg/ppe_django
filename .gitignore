@@ -5,9 +5,10 @@
 venv/
 venv
 *.pyc
-*.png
 *.log
+*.png
 *.jpg
+*.ico
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
