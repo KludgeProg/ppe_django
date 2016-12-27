@@ -10,20 +10,24 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.10/ref/settings/
 """
 from django.core.urlresolvers import reverse_lazy
+from decouple import config
+from unipath import Path
+from dj_database_url import parse as db_url
 
 import os
 
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = Path(__file__).parent
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'njb_o-$^^zt36b7==n1om1*_o2uv9h3pug$q6*c8powy#-+4of'
+SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = config('DEBUG', default=False, cast=bool)
 
 ALLOWED_HOSTS = []
 
@@ -52,7 +56,7 @@ MIDDLEWARE = [
 	'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'ppe_django.urls'
+ROOT_URLCONF = 'src.urls'
 
 TEMPLATES = [
     {
@@ -83,7 +87,7 @@ DATABASES = {
 		'HOST': 'localhost',
 		'NAME': 'ppe_db',
 		# 'USER': 'hedgehog',
-		'PASSWORD': '_welc0me_',
+		'PASSWORD': 'welc0me',
 		'PORT': '',
 	}
 }
