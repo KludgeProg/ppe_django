@@ -52,7 +52,7 @@ MIDDLEWARE = [
 	'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'ppe_django.urls'
+ROOT_URLCONF = 'src.urls'
 
 TEMPLATES = [
     {
@@ -83,7 +83,7 @@ DATABASES = {
 		'HOST': 'localhost',
 		'NAME': 'ppe_db',
 		# 'USER': 'hedgehog',
-		'PASSWORD': '_welc0me_',
+		'PASSWORD': 'welc0me',
 		'PORT': '',
 	}
 }
