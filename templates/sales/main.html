@@ -3,7 +3,7 @@
 {% load static %}
 
 {% block custom_css %}
-	<link rel="stylesheet" href="{% static 'venta/css/sidebar.css' %}">
+	<link rel="stylesheet" href="{% static 'sales/sidebar.css' %}">
 {% endblock %}
 
 {% block content %}
@@ -30,7 +30,7 @@
                   </ul>
                 </li>
 	            <li>
-                    <a href="{% url 'control_logout' %}"><i class="fa fa-fw fa-close"></i>Cerrar Sesion</a>
+                    <a href="{% url 'control_logout' %}"><i class="fa fa-fw fa-close"></i>Cerrar Sesión</a>
                 </li>
             </ul>
         </nav>
@@ -43,7 +43,7 @@
 			<!-- logout-button -->
 	        <div class="logout pull-right">
 		        <a href="{% url 'control_logout' %}">
-		            <button type="button" class="btn btn-danger">Cerrar Sesion</button>
+		            <button type="button" class="btn btn-danger">Cerrar Sesión</button>
 	            </a>
 	        </div>
 			<!-- /#logout-button -->
@@ -63,5 +63,5 @@
 {% endblock %}
 
 {% block custom_js %}
-	<script src="{% static 'venta/js/sidebar.js' %}"></script>
+	<script src="{% static 'sales/sidebar.js' %}"></script>
 {% endblock %}
