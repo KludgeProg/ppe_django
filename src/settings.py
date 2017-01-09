@@ -10,22 +10,25 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.10/ref/settings/
 """
 from django.core.urlresolvers import reverse_lazy
+from decouple import config, Csv
+from unipath import Path
+from dj_database_url import parse as db_url
 
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = Path(__file__).parent
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'njb_o-$^^zt36b7==n1om1*_o2uv9h3pug$q6*c8powy#-+4of'
+SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
 
 # Application definition
@@ -33,7 +36,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
 	'homepage.apps.HomepageConfig',
 	'login.apps.LoginConfig',
-	'venta.apps.VentaConfig',
+	'sales.apps.SalesConfig',
 	'django.contrib.admin',
 	'django.contrib.auth',
 	'django.contrib.contenttypes',
@@ -52,12 +55,15 @@ MIDDLEWARE = [
 	'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'ppe_django.urls'
+ROOT_URLCONF = 'src.urls'
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'ppe_django/templates')],
+        'DIRS': [
+			os.path.join(BASE_DIR, 'ppe_django/templates'),
+			os.path.join(BASE_DIR.parent, 'templates'),
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -71,21 +77,14 @@ TEMPLATES = [
 ]
 
 
-WSGI_APPLICATION = 'ppe_django.wsgi.application'
+WSGI_APPLICATION = 'src.wsgi.application'
 
-
-# Database
-# https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
 DATABASES = {
-	'default': {
-		'ENGINE': 'django.db.backends.postgresql',
-		'HOST': 'localhost',
-		'NAME': 'ppe_db',
-		# 'USER': 'hedgehog',
-		'PASSWORD': '_welc0me_',
-		'PORT': '',
-	}
+	'default': config(
+		'DATABASE_URL',
+		cast=db_url
+	)
 }
 
 
@@ -133,5 +132,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'ppe_django/static/'),
+	os.path.join(BASE_DIR, 'ppe_django/static/'),
+	os.path.join(BASE_DIR.parent, 'static/css'),
+	os.path.join(BASE_DIR.parent, 'static/js'),
 )

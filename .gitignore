@@ -3,7 +3,6 @@
 .vscode/
 
 venv/
-venv
 *.pyc
 *.log
 *.png
@@ -75,3 +74,6 @@ target/
 
 #SCSS map files
 *.css.map
+
+*.[oa]
+*~
