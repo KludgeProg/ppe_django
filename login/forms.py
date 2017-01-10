@@ -3,12 +3,12 @@ from django import forms
 
 class LoginForm(forms.Form):
 	user_attrs = {
-		'placeholder': 'Username',
+		'placeholder': 'Usuario',
 		'class': 'form-control input-lg',
 		'required': True,
 	}
 	password_attrs = {
-		'placeholder': 'Password',
+		'placeholder': 'Contraseña',
 		'class': 'form-control input-lg',
 		'required': True,
 	}

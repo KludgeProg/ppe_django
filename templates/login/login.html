@@ -1,10 +1,10 @@
-{% extends "common/control_header.html" %}
+{% extends "common/main_template.html" %}
 {% load static %}
 
 {% block title %}{{ current_site }}{% endblock %}
 
 {% block custom_css %}
-	<link href="{% static 'login/css/login.css' %}" rel="stylesheet">
+	<link href="{% static 'login/login.css' %}" rel="stylesheet">
 {% endblock %}
 
 {% block content %}
@@ -22,7 +22,7 @@
             <img src="{% static 'common/images/homepage/ppeLogo1.png' %}" class="img-responsive" alt="" />
             {{ form.username }}
             {{ form.password }}
-            <button type="submit" name="go" class="btn btn-lg btn-primary btn-block">Sign in</button>
+            <button type="submit" name="go" class="btn btn-lg btn-primary btn-block">Iniciar Sesión</button>
             {% if error %}
               <span class="error">{{ error }}</span>
             {% endif %}

@@ -8,4 +8,4 @@ def welcome(request):
 	ctx = {
 		'current_site': "Welcome",
 	}
-	return render(request, 'venta/home.html', ctx)
+	return render(request, 'sales/home.html', ctx)

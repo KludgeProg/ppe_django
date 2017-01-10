@@ -3,12 +3,12 @@
 .vscode/
 
 venv/
-venv
 *.pyc
 *.log
 *.png
 *.jpg
 *.ico
+*.env
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
@@ -75,3 +75,6 @@ target/
 
 #SCSS map files
 *.css.map
+
+*.[oa]
+*~
