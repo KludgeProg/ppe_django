@@ -1,0 +1,115 @@
+{% extends "common/main_template.html" %}
+
+{% load static %}
+
+{% block head %}
+	<!-- WEB DESCRIPTION -->
+	<meta name="description" content="Envío de sobres y paquetes en República Dominicana a todas partes del mundo.">
+	<meta name="author" content="Kludge">
+
+	<!-- BING -->
+	<meta name="msvalidate.01" content="5BB023DD67D9EAF723A0DC8C6F85FE6E">
+
+	<title>Puerto Plata Express - Representantes Autorizados de UPS, FedEx y DHL en Puerto Plata.</title>
+{% endblock %}
+
+{% block custom_css %}
+	<!-- TAB ICON IMAGE -->
+	<link rel="icon" type="image/ico" href="{% static 'common/images/homepage/ppeIcon1.ico' %}">
+	<link href="{% static 'homepage/homepage.css' %}" rel="stylesheet">
+
+	<!-- TAB ICON IMAGE -->
+	<link rel="icon" type="image/ico" href="{% static 'common/images/homepage/ppeIcon1.ico' %}">
+{% endblock %}
+
+
+{% block content %}
+	<!-- Navigation -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header page-scroll">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Navegador</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#page-top">Puerto Plata Express</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="hidden">
+						<a href="#page-top"></a>
+					</li>
+					<li class="page-scroll">
+						<a href="#portfolio">Servicios</a>
+					</li>
+					<li class="page-scroll">
+						<a href="#about">Nosotros</a>
+					</li>
+					<li class="page-scroll">
+						<a href="#info">Contacto</a>
+					</li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+
+	{% block body %}
+	{% endblock %}
+
+	<!-- Footer -->
+	<footer class="text-center" id="info">
+		<div class="footer-above">
+			<div class="container">
+				<div class="row">
+					<div class="footer-col col-md-4">
+						<h3>Ubicación:</h3>
+						<p>Calle Prof. Juan Bosch, No. 138<br>Puerto Plata, Dom. Rep.</p>
+					</div>
+					<div class="footer-col col-md-4">
+						<h3>En la Web:</h3>
+						<ul class="list-inline">
+							<li>
+								<a target="_blank" href="https://www.facebook.com/pages/Puerto-Plata-Express/171517712916791" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook fb-like"></i></a>
+							</li>
+							<li>
+								<a target="_blank" href="https://plus.google.com/103266571056778611715/about?gl=do&hl=en" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-col col-md-4">
+						<h3>Contacto:</h3>
+						<p>Tel: (809) 586-8264<br>
+						   Fax: (809) 586-6265<br>
+						   E-Mail: ppe138@hotmail.com</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-below">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						Copyright &copy; Puerto Plata Express {% now "Y" %}
+					</div>
+
+					<!-- Google AdSense Script -->
+						<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+						<!-- Puerto Plata Express -->
+						<ins class="adsbygoogle"
+							 style="display:block"
+							 data-ad-client="ca-pub-8877410981776015"
+							 data-ad-slot="1400692884"
+							 data-ad-format="auto"></ins>
+						<script async>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+				</div>
+			</div>
+		</div>
+	</footer>
+{% endblock %}
