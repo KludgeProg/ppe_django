@@ -5,3 +5,8 @@ Project oriented to create a customers friendly environment to serve mailing and
 In order to use different Settings file remember to use the command:
 * `python3 manage.py shell --settings=src.settings.[settings_name]` to enter the shell.
 * `python3 manage.py runserver --settings=src.settings.[settings_name]` to run the project.
+
+### Requirements
+In order to use Requirements files:
+* `pip3 install -r requirements/[requirements_name]`
+
