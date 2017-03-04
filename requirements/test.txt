@@ -1,4 +1,4 @@
 -r base.txt     # includes the base.txt requirements file
 
-coverage==3.7.1
-django-jenkins==0.16.4
+coverage==4.3.4
+django-jenkins==0.110.0

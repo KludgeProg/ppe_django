@@ -19,4 +19,4 @@ sudo -u postgres psql -c "ALTER DATABASE ppe_dev OWNER TO ppe"
 
 echo -e "************     Installing Dependencies     *************"
 cd ../../vagrant
-sudo -H pip3 install -r requirements.txt
+sudo -H pip3 install -r requirements/local.txt
