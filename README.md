@@ -9,4 +9,3 @@ In order to use different Settings file remember to use the command:
 ### Requirements
 In order to use Requirements files:
 * `pip3 install -r requirements/[requirements_name]`
-
