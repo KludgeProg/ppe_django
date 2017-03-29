@@ -5,9 +5,6 @@
 venv/
 *.pyc
 *.log
-*.png
-*.jpg
-*.ico
 *.env
 
 ### Python ###

@@ -1,5 +1,7 @@
 {% extends "homepage/base.html" %}
 
+{% block title %}{{ title }}{% endblock %}
+
 {% load static %}
 
 {% block body %}
@@ -8,7 +10,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<img class="img-responsive" src="{% static 'common/images/homepage/ppeLogo1.png' %}" alt="Logo caracterizado por las siglas PPExpress">
+					<img class="img-responsive" src="{% static 'portfolio/ppeLogo1.png' %}" alt="Logo caracterizado por las siglas PPExpress">
 					<div class="intro-text">
 						<br>
 						<span class="name">Puerto Plata Express</span>
@@ -37,7 +39,7 @@
 								<i class="fa fa-search-plus fa-3x"></i>
 							</div>
 						</div>
-						<img src="{% static 'common/images/homepage/envio1.png' %}" class="img-responsive img-centered" alt="Envios Nacionales e Internacionales">
+						<img src="{% static 'portfolio/envio1.png' %}" class="img-responsive img-centered" alt="Envios Nacionales e Internacionales">
 					</a>
 				</div>
 				<div class="col-sm-4 portfolio-item">
@@ -47,7 +49,7 @@
 								<i class="fa fa-search-plus fa-3x"></i>
 							</div>
 						</div>
-						<img src="{% static 'common/images/homepage/pasaporte1.png' %}" class="img-responsive img-centered" alt="Llenado Formularios de Visa">
+						<img src="{% static 'portfolio/pasaporte1.png' %}" class="img-responsive img-centered" alt="Llenado Formularios de Visa">
 					</a>
 				</div>
 				<div class="col-sm-4 portfolio-item">
@@ -57,7 +59,7 @@
 								<i class="fa fa-search-plus fa-3x"></i>
 							</div>
 						</div>
-						<img src="{% static 'common/images/homepage/copias1.png' %}" class="img-responsive img-centered" alt="Fotocopias a Escala de Grises y Color">
+						<img src="{% static 'portfolio/copias1.png' %}" class="img-responsive img-centered" alt="Fotocopias a Escala de Grises y Color">
 					</a>
 				</div>
 				<div class="col-sm-6 portfolio-item">
@@ -67,7 +69,7 @@
 								<i class="fa fa-search-plus fa-3x"></i>
 							</div>
 						</div>
-						<img src="{% static 'common/images/homepage/fax1.png' %}" class="img-responsive img-centered" alt="Fax y Scaner de Fotos">
+						<img src="{% static 'portfolio/fax1.png' %}" class="img-responsive img-centered" alt="Fax y Scaner de Fotos">
 					</a>
 				</div>
 				<div class="col-sm-6 portfolio-item">
@@ -77,7 +79,7 @@
 								<i class="fa fa-search-plus fa-3x"></i>
 							</div>
 						</div>
-						<img src="{% static 'common/images/homepage/compras1.png' %}" class="img-responsive img-centered" alt="Compras por Internet">
+						<img src="{% static 'portfolio/compras1.png' %}" class="img-responsive img-centered" alt="Compras por Internet">
 					</a>
 				</div>
 			</div>
@@ -135,7 +137,7 @@
 						<div class="modal-body">
 							<h2>Envíos Nacionales e Internacionales</h2>
 							<hr class="star-primary">
-							<img src="{% static 'common/images/homepage/envio1.png' %}" class="img-responsive img-centered" alt="Envios Nacionales e Internacionales">
+							<img src="{% static 'portfolio/envio1.png' %}" class="img-responsive img-centered" alt="Envios Nacionales e Internacionales">
 							<p>Envíos Nacionales e Internacionales a todas partes del mundo y el país vía UPS, FedEx y DHL. Contamos con el mejor servicio Expreso, seguro y confiable.</p>
 							<ul class="list-inline item-details">
 								<li>Teléfono:
@@ -172,7 +174,7 @@
 						<div class="modal-body">
 							<h2>Servicios Consulares</h2>
 							<hr class="star-primary">
-							<img src="{% static 'common/images/homepage/pasaporte1.png' %}" class="img-responsive img-centered" alt="Llenado Formularios de Visa">
+							<img src="{% static 'portfolio/pasaporte1.png' %}" class="img-responsive img-centered" alt="Llenado Formularios de Visa">
 							<p>Gestión del proceso de visado desde República Dominicana hacia Estados Unidos ya sea para visa de Noviazgo, Matrimonio, Viaje, Trabajo, Residencia, entre otros. Además, llenamos todo tipo de formularios para Visa de Inmigrantes y No Inmigrantes tales como:
 								<li>DS-160</li>
 								<li>DS-260</li>
@@ -212,7 +214,7 @@
 						<div class="modal-body">
 							<h2>Copias</h2>
 							<hr class="star-primary">
-							<img src="{% static 'common/images/homepage/copias1.png' %}" class="img-responsive img-centered" alt="Fotocopias a Escala de Grises y Color">
+							<img src="{% static 'portfolio/copias1.png' %}" class="img-responsive img-centered" alt="Fotocopias a Escala de Grises y Color">
 							<p>Sacado de Copias a escala de Grises y Color, así como venta de Sobres, Folders, Papelería, Impresiones a escala de Grises y Color, y mucho mas...</p>
 							<ul class="list-inline item-details">
 								<li>Teléfono:
@@ -249,7 +251,7 @@
 						<div class="modal-body">
 							<h2>Fax / Scáner</h2>
 							<hr class="star-primary">
-							<img src="{% static 'common/images/homepage/fax1.png' %}" class="img-responsive img-centered" alt="Fax y Scaner de Fotos">
+							<img src="{% static 'portfolio/fax1.png' %}" class="img-responsive img-centered" alt="Fax y Scaner de Fotos">
 							<p>Recepción y envío de Fax a nivel Nacional e Internacional así como digitalización de documentos para facilidad de manipulación.</p>
 							<ul class="list-inline item-details">
 								<li>Teléfono:
@@ -287,7 +289,7 @@
 						<div class="modal-body">
 							<h2>Compras por Internet</h2>
 							<hr class="star-primary">
-							<img src="{% static 'common/images/homepage/compras1.png' %}" class="img-responsive img-centered" alt="Compras por Internet">
+							<img src="{% static 'portfolio/compras1.png' %}" class="img-responsive img-centered" alt="Compras por Internet">
 							<p>Compra de Artículos por Internet (eBay, Amazon, iTunes, Alienware...)</p>
 							<ul class="list-inline item-details">
 								<li>Teléfono:

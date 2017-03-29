@@ -4,4 +4,5 @@ from django.shortcuts import render
 
 
 def homepage(request):
-	return render(request, 'homepage/homepage_body.html')
+	context = {'title': 'Inicio'}
+	return render(request, 'homepage/homepage_body.html', context)
